@@ -401,6 +401,10 @@ template {
   margin-right: 112px;
 }
 
+.navbar-menu__item:first-child {
+  margin-left: 18px;
+}
+
 .navbar-menu__link {
   color: #FFFFFF;
   font-style: normal;
@@ -419,6 +423,7 @@ template {
   line-height: 24px;
   text-decoration: none;
   text-transform: uppercase;
+  margin-right: 16px;
 }
 
 .navbar-authorization__icon {
