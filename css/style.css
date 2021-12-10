@@ -415,6 +415,14 @@ template {
   text-transform: uppercase;
 }
 
+.navbar-menu__link:hover {
+  content: '';
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-bottom: 24px;
+  border-bottom: solid 1px #826550;
+}
+
 .navbar-authorization__get {
   color: #FFFFFF;
   font-style: normal;
@@ -424,6 +432,14 @@ template {
   text-decoration: none;
   text-transform: uppercase;
   margin-right: 16px;
+}
+
+.navbar-authorization__get:hover {
+  content: '';
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-bottom: 24px;
+  border-bottom: solid 1px #826550;
 }
 
 .navbar-authorization__icon {
