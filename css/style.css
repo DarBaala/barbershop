@@ -376,10 +376,7 @@ template {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 129px;
+  margin-bottom: 57px;
 }
 
 .navbar {
@@ -398,15 +395,15 @@ template {
 
 .navbar-menu__item {
   list-style-type: none;
-  margin-right: 63px;
+  margin-right: 65px;
 }
 
 .navbar-menu__item:last-child {
-  margin-right: 112px;
+  margin-right: 145px;
 }
 
 .navbar-menu__item:first-child {
-  margin-left: 18px;
+  margin-left: 33px;
 }
 
 .navbar-menu__link {
@@ -435,7 +432,6 @@ template {
   line-height: 24px;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 16px;
   border-bottom: 1px solid transparent;
   padding-bottom: 24px;
 }
@@ -464,6 +460,151 @@ template {
 
 .appointment {
   display: none;
+}
+
+.advantage {
+  background-color: #353535;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  margin-top: -161px;
+  background-color: #FFFFFF;
+}
+
+.banner-one {
+  display: block;
+  padding-left: 37px;
+  padding-right: 71px;
+  background-color: #FFFFFF;
+}
+
+.banner-one__title {
+  padding-top: 25px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  max-width: 203px;
+  padding-bottom: 42px;
+  color: #000000;
+}
+
+.banner-one__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  max-width: 203px;
+  padding-bottom: 33px;
+  color: #000000;
+}
+
+.banner-one__commentary {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.banner-two__price {
+  background-color: #3f3f3f;
+  padding: 25px 113px 30px 34px;
+}
+
+.banner-two__price--figure {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 62px;
+  color: #FFFFFF;
+  padding-bottom: 14px;
+}
+
+.banner-two__price--text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.banner-two__hair {
+  padding: 29px 99px 30px 34px;
+  background-color: #353535;
+}
+
+.banner-two__hair--figure {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 62px;
+  color: #FFFFFF;
+  padding-bottom: 15px;
+}
+
+.banner-two__hair--fact {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.banner-three__time {
+  padding: 22px 30px 26px 32px;
+  background-color: #4d4d4d;
+}
+
+.banner-three__time--figure {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 62px;
+  color: #FFFFFF;
+  padding-bottom: 18px;
+}
+
+.banner-three__time--text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+  margin-bottom: 3px;
+}
+
+.banner-three__like {
+  background-color: #3f3f3f;
+  padding: 22px 30px 30px 32px;
+}
+
+.banner-three__like--figure {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FFFFFF;
+  padding-bottom: 10px;
+}
+
+.banner-three__like--text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+  padding-bottom: 2px;
+}
+
+.vantage {
+  height: 1000px;
+  width: 1000px;
+  display: block;
 }
 
 @media (max-width: 1200px) {
