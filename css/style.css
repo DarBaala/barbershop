@@ -708,7 +708,7 @@ template {
   }
   .banner-three__time {
     padding-top: 31px;
-    padding-bottom: 23px;
+    padding-bottom: 22px;
   }
   .banner-three__time--figure {
     padding-bottom: 14px;
@@ -745,7 +745,7 @@ template {
     display: -ms-flexbox;
     display: flex;
     margin: auto;
-    padding: 26px 47px 29px;
+    padding: 26px 0px 29px;
   }
   .mobile-logo__svg {
     min-width: 226px;
