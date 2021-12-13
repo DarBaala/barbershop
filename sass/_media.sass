@@ -8,6 +8,16 @@
 @media  ( max-width: 992px)
   .container
     max-width: 640px
+  .header
+    min-height: 464px
+    &-layouts
+      margin-bottom: 37px
+  .logo
+    &-desktop
+      display: none
+    &-mobile
+      display: flex
+      margin: auto        
   .navbar
     &-authorization
       &__get
@@ -19,6 +29,49 @@
           margin-right: 31px
         &:first-child
           margin-left: 0px
+  .banner
+    flex-wrap: wrap
+    max-width: 640px
+    margin-top: -186px
+    background-color: transparent
+    &-one
+      display: flex
+      max-height: 186px
+      flex-wrap: wrap
+      
+      justify-content: space-between
+      &__title
+        flex-wrap: nowrap
+        padding-bottom: 24px
+        margin-top: 8px
+        margin-left: -5px
+      &__text
+        flex-wrap: wrap
+        margin-top: 36px
+        padding-bottom: 0
+        margin-right: 12px
+      &__commentary
+        flex-wrap: nowrap
+        padding-bottom: 30px
+        margin-top: -3px
+        margin-left: -3px
+    &-two
+      &__price
+        padding-top: 31px
+        padding-bottom: 25px
+      &__hair
+        padding-bottom: 26px  
+    &-three
+      &__like
+        padding-bottom: 25px
+      &__time
+        padding-top: 31px
+        padding-bottom: 23px
+        &--figure
+          padding-bottom: 14px          
+
+
+                  
 @media  ( max-width: 768px)
   .container
     max-width: 280px

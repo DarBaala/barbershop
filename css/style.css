@@ -366,7 +366,7 @@ template {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 720px;
+  min-height: 720px;
 }
 
 .header-layouts {
@@ -454,6 +454,17 @@ template {
   margin: auto;
 }
 
+.logo-mobile {
+  display: none;
+}
+
+.logo-desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
 .mobile {
   display: none;
 }
@@ -473,6 +484,8 @@ template {
   position: absolute;
   margin-top: -161px;
   background-color: #FFFFFF;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .banner-one {
@@ -513,7 +526,7 @@ template {
 
 .banner-two__price {
   background-color: #3f3f3f;
-  padding: 25px 113px 30px 34px;
+  padding: 25px 113px 33px 34px;
 }
 
 .banner-two__price--figure {
@@ -556,7 +569,7 @@ template {
 }
 
 .banner-three__time {
-  padding: 22px 30px 26px 32px;
+  padding: 22px 30px 29px 32px;
   background-color: #4d4d4d;
 }
 
@@ -617,6 +630,21 @@ template {
   .container {
     max-width: 640px;
   }
+  .header {
+    min-height: 464px;
+  }
+  .header-layouts {
+    margin-bottom: 37px;
+  }
+  .logo-desktop {
+    display: none;
+  }
+  .logo-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
   .navbar-authorization__get {
     display: none;
   }
@@ -628,6 +656,62 @@ template {
   }
   .navbar-menu__item:first-child {
     margin-left: 0px;
+  }
+  .banner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 640px;
+    margin-top: -186px;
+    background-color: transparent;
+  }
+  .banner-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-height: 186px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .banner-one__title {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding-bottom: 24px;
+    margin-top: 8px;
+    margin-left: -5px;
+  }
+  .banner-one__text {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 36px;
+    padding-bottom: 0;
+    margin-right: 12px;
+  }
+  .banner-one__commentary {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding-bottom: 30px;
+    margin-top: -3px;
+    margin-left: -3px;
+  }
+  .banner-two__price {
+    padding-top: 31px;
+    padding-bottom: 25px;
+  }
+  .banner-two__hair {
+    padding-bottom: 26px;
+  }
+  .banner-three__like {
+    padding-bottom: 25px;
+  }
+  .banner-three__time {
+    padding-top: 31px;
+    padding-bottom: 23px;
+  }
+  .banner-three__time--figure {
+    padding-bottom: 14px;
   }
 }
 
