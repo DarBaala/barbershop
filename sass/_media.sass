@@ -73,6 +73,8 @@
 
                   
 @media  ( max-width: 768px)
+  .advantage
+    display: none
   .container
     max-width: 280px
   .navbar   
@@ -92,19 +94,19 @@
       margin: auto
       padding: 26px 47px 29px
       &__svg
+        min-width: 226px
 
   .appointment
     display: flex
     background-color: #826550
-    min-height: 50px
     position: relative
     &-appoint
       display: flex
       align-items: center
       &__title
+        padding-top: 9px
+        padding-bottom: 13px
         &--link
-          padding-top: 13px
-          padding-bottom: 13px
           color: $white
           font-style: normal
           font-weight: bold
@@ -117,18 +119,20 @@
     top: 0
     position: absolute
     display: flex
-    height: 50px
+    height: 49px
     width: 70px
     align-items: center
-    justify-content: space-evenly
     flex-direction: column
     border: none
     background-color: #6A4D38
     cursor: pointer
     &__line
+      margin-bottom: 7px  
       width: 36px
       height: 2px
       background-color: #FFFFFF
+      &:first-child
+        margin-top: 16px
     
 
         

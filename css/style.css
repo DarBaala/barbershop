@@ -716,6 +716,9 @@ template {
 }
 
 @media (max-width: 768px) {
+  .advantage {
+    display: none;
+  }
   .container {
     max-width: 280px;
   }
@@ -744,12 +747,14 @@ template {
     margin: auto;
     padding: 26px 47px 29px;
   }
+  .mobile-logo__svg {
+    min-width: 226px;
+  }
   .appointment {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     background-color: #826550;
-    min-height: 50px;
     position: relative;
   }
   .appointment-appoint {
@@ -760,9 +765,11 @@ template {
         -ms-flex-align: center;
             align-items: center;
   }
-  .appointment-appoint__title--link {
-    padding-top: 13px;
+  .appointment-appoint__title {
+    padding-top: 9px;
     padding-bottom: 13px;
+  }
+  .appointment-appoint__title--link {
     color: #FFFFFF;
     font-style: normal;
     font-weight: bold;
@@ -778,14 +785,11 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 50px;
+    height: 49px;
     width: 70px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -795,9 +799,13 @@ template {
     cursor: pointer;
   }
   .burger__line {
+    margin-bottom: 7px;
     width: 36px;
     height: 2px;
     background-color: #FFFFFF;
+  }
+  .burger__line:first-child {
+    margin-top: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
