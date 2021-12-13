@@ -9,7 +9,7 @@
   .container
     max-width: 640px
   .header
-    min-height: 464px
+    height: 464px
     &-layouts
       margin-bottom: 37px
   .logo
@@ -73,8 +73,6 @@
 
                   
 @media  ( max-width: 768px)
-  .advantage
-    display: none
   .container
     max-width: 280px
   .navbar   
@@ -84,6 +82,9 @@
       display: none
   .header
     background-image: none
+    height: 0
+    &-layouts
+      margin-bottom: 0
   .logo
     display: none   
   .mobile
@@ -120,7 +121,7 @@
     top: 0
     position: absolute
     display: flex
-    height: 49px
+    height: 50px
     width: 70px
     align-items: center
     flex-direction: column
@@ -134,6 +135,135 @@
       background-color: #FFFFFF
       &:first-child
         margin-top: 16px
+  .banner
+    margin-top: 132px
+    left: 0
+    display: block
+    flex-wrap: nowrap
+    min-width: 100%
+    &-one
+      display: flex
+      max-height: none
+      flex-direction: column
+      align-items: center
+      text-align: center
+      &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 30px
+        line-height: 30px
+        text-transform: uppercase
+        margin-left: 33px
+        margin-top: 0
+      &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 27px 
+        margin-right: 0
+        margin-left: 36px
+        margin-top: -8px
+        max-width: 240px
+        margin-bottom: 27px 
+      &__commentary
+        display: none
+    &-two
+      &__price
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        padding-bottom: 23px
+        padding-top: 18px
+        padding-left: 0
+        padding-right: 0
+        &--figure
+          align-items: center
+          font-style: normal
+          font-weight: bold
+          font-size: 40px
+          line-height: 40px
+          padding-bottom: 0
+          padding-left: 0px        
+        &--text
+          text-align: right
+          font-style: normal
+          font-weight: normal
+          font-size: 18px
+          line-height: 18px
+          max-width: 110px 
+    &-two
+      &__hair
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        padding-bottom: 22px
+        padding-top: 18px
+        padding-left: 0
+        padding-right: 0
+        &--figure
+          align-items: center
+          font-style: normal
+          font-weight: bold
+          font-size: 40px
+          line-height: 40px
+          padding-bottom: 0
+          padding-left: 0px        
+        &--fact
+          text-align: right
+          font-style: normal
+          font-weight: normal
+          font-size: 18px
+          line-height: 18px
+          max-width: 110px
+    &-three
+      &__time
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        padding-bottom: 22px
+        padding-top: 18px
+        padding-left: 0
+        padding-right: 0
+        &--figure
+          align-items: center
+          font-style: normal
+          font-weight: bold
+          font-size: 40px
+          line-height: 40px
+          padding-bottom: 0
+          padding-left: 0px        
+        &--text
+          text-align: right
+          font-style: normal
+          font-weight: normal
+          font-size: 18px
+          line-height: 18px
+          max-width: 110px
+      &__like
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        padding-bottom: 23px
+        padding-top: 18px
+        padding-left: 0
+        padding-right: 0
+        &--figure
+          align-items: center
+          font-style: normal
+          font-weight: bold
+          font-size: 40px
+          line-height: 40px
+          padding-bottom: 0
+          padding-left: 0px       
+        &--text
+          text-align: right
+          font-style: normal
+          font-weight: normal
+          font-size: 18px
+          line-height: 18px
+          max-width: 110px      
+                       
+
     
 
         
