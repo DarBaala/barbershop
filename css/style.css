@@ -483,9 +483,9 @@ template {
   display: flex;
   position: absolute;
   margin-top: -161px;
-  background-color: #FFFFFF;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  max-width: 980px;
 }
 
 .banner-one {
@@ -493,6 +493,7 @@ template {
   padding-left: 37px;
   padding-right: 71px;
   background-color: #FFFFFF;
+  min-width: 324px;
 }
 
 .banner-one__title {
@@ -524,6 +525,14 @@ template {
   color: rgba(0, 0, 0, 0.302);
 }
 
+.banner-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .banner-two__price {
   background-color: #3f3f3f;
   padding: 25px 113px 33px 34px;
@@ -547,7 +556,7 @@ template {
 }
 
 .banner-two__hair {
-  padding: 29px 99px 30px 34px;
+  padding: 25px 99px 25px 34px;
   background-color: #353535;
 }
 
@@ -568,12 +577,12 @@ template {
   color: #FFFFFF;
 }
 
-.banner-three__time {
-  padding: 22px 30px 29px 32px;
+.banner-two__time {
+  padding: 22px 113px 29px 32px;
   background-color: #4d4d4d;
 }
 
-.banner-three__time--figure {
+.banner-two__time--figure {
   font-style: normal;
   font-weight: bold;
   font-size: 72px;
@@ -582,7 +591,7 @@ template {
   padding-bottom: 18px;
 }
 
-.banner-three__time--text {
+.banner-two__time--text {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -591,12 +600,12 @@ template {
   margin-bottom: 3px;
 }
 
-.banner-three__like {
+.banner-two__like {
   background-color: #3f3f3f;
-  padding: 22px 30px 30px 32px;
+  padding: 22px 30px 25px 32px;
 }
 
-.banner-three__like--figure {
+.banner-two__like--figure {
   font-style: normal;
   font-weight: bold;
   font-size: 72px;
@@ -605,7 +614,7 @@ template {
   padding-bottom: 10px;
 }
 
-.banner-three__like--text {
+.banner-two__like--text {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -703,14 +712,14 @@ template {
   .banner-two__hair {
     padding-bottom: 26px;
   }
-  .banner-three__like {
+  .banner-two__like {
     padding-bottom: 25px;
   }
-  .banner-three__time {
+  .banner-two__time {
     padding-top: 31px;
     padding-bottom: 22px;
   }
-  .banner-three__time--figure {
+  .banner-two__time--figure {
     padding-bottom: 14px;
   }
 }
@@ -854,6 +863,15 @@ template {
   .banner-one__commentary {
     display: none;
   }
+  .banner-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .banner-two__price {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -922,7 +940,7 @@ template {
     line-height: 18px;
     max-width: 110px;
   }
-  .banner-three__time {
+  .banner-two__time {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -937,7 +955,7 @@ template {
     padding-left: 0;
     padding-right: 0;
   }
-  .banner-three__time--figure {
+  .banner-two__time--figure {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -948,7 +966,7 @@ template {
     padding-bottom: 0;
     padding-left: 0px;
   }
-  .banner-three__time--text {
+  .banner-two__time--text {
     text-align: right;
     font-style: normal;
     font-weight: normal;
@@ -956,7 +974,7 @@ template {
     line-height: 18px;
     max-width: 110px;
   }
-  .banner-three__like {
+  .banner-two__like {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -971,7 +989,7 @@ template {
     padding-left: 0;
     padding-right: 0;
   }
-  .banner-three__like--figure {
+  .banner-two__like--figure {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -982,7 +1000,7 @@ template {
     padding-bottom: 0;
     padding-left: 0px;
   }
-  .banner-three__like--text {
+  .banner-two__like--text {
     text-align: right;
     font-style: normal;
     font-weight: normal;

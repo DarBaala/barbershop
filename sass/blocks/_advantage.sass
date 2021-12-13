@@ -5,13 +5,14 @@
   display: flex
   position: absolute
   margin-top: -161px
-  background-color: #FFFFFF
-  flex-wrap: nowrap    
+  flex-wrap: nowrap
+  max-width: 980px  
   &-one
     display: block
     padding-left: 37px
     padding-right: 71px
     background-color: #FFFFFF
+    min-width: 324px
     &__title
       padding-top: 25px
       font-style: normal
@@ -35,7 +36,9 @@
       font-size: 20px
       line-height: 27px
       color: rgba(0, 0, 0, 0.302)
-  &-two 
+  &-two
+    display: flex
+    flex-wrap: wrap 
     &__price
       background-color: #3f3f3f
       padding: 25px 113px 33px 34px
@@ -53,7 +56,7 @@
         line-height: 27px
         color: $white
     &__hair
-      padding: 29px 99px 30px 34px
+      padding: 25px 99px 25px 34px
       background-color: #353535
       &--figure
         font-style: normal
@@ -67,10 +70,9 @@
         font-weight: normal
         font-size: 20px
         line-height: 27px
-        color: $white
-  &-three  
+        color: $white 
     &__time
-      padding: 22px 30px 29px 32px
+      padding: 22px 113px 29px 32px
       background-color: #4d4d4d
       &--figure
         font-style: normal
@@ -88,7 +90,7 @@
         margin-bottom: 3px
     &__like
       background-color: #3f3f3f
-      padding: 22px 30px 30px 32px
+      padding: 22px 30px 25px 32px
       &--figure
         font-style: normal
         font-weight: bold
