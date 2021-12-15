@@ -421,6 +421,10 @@ template {
   border-bottom: 1px solid #826550;
 }
 
+.navbar-authorization__link {
+  cursor: pointer;
+}
+
 .navbar-authorization__get {
   color: #FFFFFF;
   font-style: normal;
