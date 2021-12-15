@@ -515,6 +515,10 @@ template {
   color: rgba(0, 0, 0, 0.302);
 }
 
+.advantages-blocks__commentary--mobile {
+  display: none;
+}
+
 .advantages-blocks__right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -847,6 +851,12 @@ template {
   }
   .advantages-blocks__commentary {
     display: none;
+    margin: auto;
+  }
+  .advantages-blocks__commentary--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .advantages-blocks__right {
     display: -webkit-box;
@@ -971,6 +981,7 @@ template {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    margin-bottom: 17px;
     padding-bottom: 20px;
     padding-top: 20px;
     padding-left: 0;
