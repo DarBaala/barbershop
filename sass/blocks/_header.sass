@@ -1,26 +1,21 @@
 .header
-  background-image: url(../img/back-desktop.png)
-  background-position: center
-  background-repeat: no-repeat
-  background-size: cover
-  height: 720px
+  &__margin
+    margin-bottom: 58px
+  &-mobile
+    display: none
+.navbar
+  background-color: $black
   &-layouts
     display: flex
     align-items: baseline
-    margin-bottom: 57px
-.navbar
-  background-color: $black 
   &-menu
     display: flex
     align-items: center
-    padding: 21px 0 24px
+    padding: 23px 0px 23px 31px
+    width: 90%
     &__item
       list-style-type: none
       margin-right: 65px
-      &:last-child
-        margin-right: 145px
-      &:first-child
-        margin-left: 33px  
     &__link
       color: $white
       font-style: normal
@@ -51,17 +46,13 @@
         border-bottom: 1px solid #826550
         
     &__icon
-      margin-right: 19px
+      margin-right: 10px
       margin-bottom: -1px  
 .logo
   display: flex
   margin: auto
-  &-mobile
+  &__tablet
     display: none
-  &-desktop
+  &__desktop
     display: flex
-    margin: auto  
-.mobile
-  display: none  
-.appointment
-  display: none  
+    margin: auto        

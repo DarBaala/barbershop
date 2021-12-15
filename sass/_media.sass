@@ -1,21 +1,22 @@
 @media ( max-width: 1200px)
   .container
     max-width: 960px
-  .header
+  .navbar
     &-layouts
       
 
 @media  ( max-width: 992px)
+  body
+    height: 465px
   .container
     max-width: 640px
   .header
-    height: 464px
-    &-layouts
-      margin-bottom: 37px
+    &__margin
+      margin-bottom: 38px  
   .logo
-    &-desktop
+    &__desktop
       display: none
-    &-mobile
+    &__tablet
       display: flex
       margin: auto        
   .navbar
@@ -23,244 +24,240 @@
       &__get
         display: none
     &-menu
+      width: 93%
+      padding: 21px 0px 24px 0px
       &__item
         margin-right: 34px
-        &:last-child
-          margin-right: 31px
-        &:first-child
-          margin-left: 0px
-  .banner
-    flex-wrap: wrap
-    max-width: 640px
-    margin-top: -186px
-    background-color: transparent
-    &-one
-      display: flex
-      max-height: 186px
+  .advantages
+    transform: translateY(14.50%)      
+    &-blocks
       flex-wrap: wrap
-      justify-content: space-between
-      &__title
-        flex-wrap: nowrap
-        padding-bottom: 24px
-        margin-top: 8px
-        margin-left: -5px
-      &__text
+      max-width: 640px
+      background-color: transparent
+      &__left
+        padding-left: 33px
+        padding-top: 31px
+        display: flex
+        min-height: 185px
         flex-wrap: wrap
-        margin-top: 36px
-        padding-bottom: 0
-        margin-right: 12px
-      &__commentary
+        justify-content: space-between
+      &__title
+        margin-bottom: 0
         flex-wrap: nowrap
-        padding-bottom: 30px
-        margin-top: -3px
-        margin-left: -3px
-    &-two
+      &__text
+        margin-top: 4px
+        margin-right: 84px
+      &__commentary
+        margin-top: -36px
+        flex-wrap: nowrap
+      &__right
       &__price
         padding-top: 31px
-        padding-bottom: 25px
+        padding-bottom: 24px
+      &__price-text
+        margin-bottom: 13px  
       &__hair
-        padding-bottom: 26px 
+        padding: 32px 0px 25px 33px
+      &__hair-text
+        margin-bottom: 15px  
       &__like
-        padding-bottom: 25px
+        padding: 27px 0px 25px 33px
       &__time
         padding-top: 31px
-        padding-bottom: 22px
-        &--figure
-          padding-bottom: 14px          
+        padding-bottom: 24px
+      &__time-text
+        margin-bottom: 13px          
 
 
                   
 @media  ( max-width: 768px)
   .container
     max-width: 280px
-  .navbar   
-    &-authorization
-      display: none
-    &-menu
-      display: none
+  .navbar
+    display: none
   .header
+    &__margin
+      display: none 
+  body
     background-image: none
-    height: 0
-    &-layouts
-      margin-bottom: 0
   .logo
     display: none   
-  .mobile
-    display: flex
-    background-color: #242424
-    &-logo
+  .header
+    &-mobile
       display: flex
-      margin: auto
-      padding: 26px 0px 23px
-      cursor: pointer
-      &__svg
-        min-width: 226px
-
-  .appointment
-    display: flex
-    background-color: #826550
-    position: relative
-    &-appoint
-      display: flex
-      align-items: center
+      flex-direction: column
+      background-color: #242424
+      &__logo
+        display: flex
+        margin: auto
+        padding: 26px 0px 21px
+        cursor: pointer
+      &__image
+        min-width: 226px  
+      &__appointment
+        display: flex
+        background-color: #826550
+        position: relative
       &__title
         padding-top: 9px
         padding-bottom: 13px
-        &--link
-          color: $white
-          font-style: normal
-          font-weight: bold
-          font-size: 18px
-          line-height: 24px
-          text-decoration: none
-          text-transform: uppercase
-  .burger
-    right: 0
-    top: 0
-    position: absolute
-    display: flex
-    height: 50px
-    width: 70px
-    align-items: center
-    flex-direction: column
-    border: none
-    background-color: #6A4D38
-    cursor: pointer
-    &__line
-      margin-bottom: 7px  
-      width: 36px
-      height: 2px
-      background-color: #FFFFFF
-      &:first-child
-        margin-top: 16px
-  .banner
-    margin-top: 132px
-    left: 0
-    display: block
-    flex-wrap: nowrap
-    min-width: 100%
-    &-one
-      min-height: 0
-      display: flex
-      max-height: none
-      flex-direction: column
-      align-items: center
-      text-align: center
+      &__link
+        color: $white
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 24px
+        text-decoration: none
+        text-transform: uppercase
+      &__burger
+        right: 0
+        top: 0
+        position: absolute
+        display: flex
+        height: 50px
+        width: 70px
+        align-items: center
+        flex-direction: column
+        border: none
+        background-color: #6A4D38
+        cursor: pointer
+      &__line
+        margin-bottom: 7px  
+        width: 36px
+        height: 2px
+        background-color: #FFFFFF
+        &:first-child
+          margin-top: 16px 
+
+  .advantages
+    transform: translateY(0%)
+    &-blocks
+      display: block
+      flex-wrap: nowrap
+      min-width: 100%
+      &__left
+        min-width: 0
+        min-height: 183px
+        padding: 26px 0px 27px 0px
+        margin: 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
       &__title
         font-style: normal
         font-weight: bold
         font-size: 30px
         line-height: 30px
         text-transform: uppercase
-        margin-left: 33px
-        margin-top: 0
       &__text
+        margin-bottom: 0
+        margin-right: 0
         font-style: normal
         font-weight: normal
         font-size: 20px
         line-height: 27px 
-        margin-right: 0
-        margin-left: 36px
-        margin-top: -8px
         max-width: 240px
-        margin-bottom: 27px 
       &__commentary
         display: none
-    &-two
-      display: flex
-      flex-direction: column
+      &__right
+        display: flex
+        flex-direction: column
       &__price
+        width: 100%
         display: flex
         align-items: self-end
         justify-content: space-evenly
-        padding-bottom: 23px
-        padding-top: 18px
-        padding-left: 0
-        padding-right: 0
-        &--figure
-          align-items: center
-          font-style: normal
-          font-weight: bold
-          font-size: 40px
-          line-height: 40px
-          padding-bottom: 0
-          padding-left: 0px        
-        &--text
-          text-align: right
-          font-style: normal
-          font-weight: normal
-          font-size: 18px
-          line-height: 18px
-          max-width: 110px 
+        padding: 20px 0 20px 0
+      &__price-text
+        margin-bottom: 0
+        margin-right: 10px
+        align-items: center
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 40px     
+      &__price-subtext
+        margin: 0
+        text-align: right
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 18px
+        max-width: 110px 
       &__hair
+        width: 100%
         display: flex
         align-items: self-end
         justify-content: space-evenly
-        padding-bottom: 22px
-        padding-top: 18px
+        padding-bottom: 20px
+        padding-top: 20px
         padding-left: 0
         padding-right: 0
-        &--figure
-          align-items: center
-          font-style: normal
-          font-weight: bold
-          font-size: 40px
-          line-height: 40px
-          padding-bottom: 0
-          padding-left: 0px        
-        &--fact
-          text-align: right
-          font-style: normal
-          font-weight: normal
-          font-size: 18px
-          line-height: 18px
-          max-width: 110px
+      &__hair-text
+        margin: 0
+        align-items: center
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 40px      
+      &__hair-subtext
+        margin: 0
+        text-align: right
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 18px
+        max-width: 110px
       &__time
+        width: 100%
         display: flex
         align-items: self-end
         justify-content: space-evenly
-        padding-bottom: 22px
-        padding-top: 18px
+        padding-bottom: 20px
+        padding-top: 20px
         padding-left: 0
         padding-right: 0
-        &--figure
-          align-items: center
-          font-style: normal
-          font-weight: bold
-          font-size: 40px
-          line-height: 40px
-          padding-bottom: 0
-          padding-left: 0px        
-        &--text
-          text-align: right
-          font-style: normal
-          font-weight: normal
-          font-size: 18px
-          line-height: 18px
-          max-width: 110px
+      &__time-text
+        margin: 0
+        align-items: center
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 40px       
+      &__time-subtext
+        margin-left: 27px
+        text-align: right
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 18px
+        max-width: 110px
       &__like
+        width: 100%
         display: flex
         align-items: self-end
         justify-content: space-evenly
-        padding-bottom: 23px
-        padding-top: 18px
+        padding-bottom: 20px
+        padding-top: 20px
         padding-left: 0
         padding-right: 0
-        &--figure
-          align-items: center
-          font-style: normal
-          font-weight: bold
-          font-size: 40px
-          line-height: 40px
-          padding-bottom: 0
-          margin-right: -45px       
-        &--text
-          text-align: right
-          font-style: normal
-          font-weight: normal
-          font-size: 18px
-          line-height: 18px
-          max-width: 110px      
+      &__like-text
+        margin: 0
+        align-items: center
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 40px
+        margin-right: -45px       
+      &__like-subtext
+        margin: 0
+        text-align: right
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 18px
+        max-width: 110px      
                        
 
     

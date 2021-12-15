@@ -15,35 +15,29 @@
   </head>
   <body>
     <header class="header">
+      <div class="header-mobile">
+        <div class="header-mobile__logo container">
+          <a href="#" class="header-mobile__link"
+            ><img
+              src="img/logotypemobile.svg"
+              alt="Logo: barbershop"
+              class="header-mobile__image"
+          /></a>
+        </div>
+        <div class="header-mobile__appointment">
+          <h2 class="header-mobile__title container">
+            <a href="#" class="header-mobile__link">ЗАПИСАТЬСЯ</a>
+          </h2>
+          <button class="header-mobile__burger">
+            <span class="header-mobile__line"> </span
+            ><span class="header-mobile__line"> </span
+            ><span class="header-mobile__line"> </span>
+          </button>
+        </div>
+      </div>
       <div class="navbar">
-        <div class="mobile">
-          <div class="mobile-logo container">
-            <a href="#"
-              ><img
-                src="img/logotypemobile.svg"
-                alt="Logo: barbershop"
-                class="mobile-logo__svg"
-            /></a>
-          </div>
-        </div>
-        <div class="appointment">
-          <div class="appointment-appoint container">
-            <h2 class="appointment-appoint__title">
-              <a href="#" class="appointment-appoint__title--link"
-                >ЗАПИСАТЬСЯ</a
-              >
-            </h2>
-            <div class="appointment-appoint__burger">
-              <button class="burger">
-                <span class="burger__line"> </span
-                ><span class="burger__line"> </span
-                ><span class="burger__line"> </span>
-              </button>
-            </div>
-          </div>
-        </div>
         <div class="container">
-          <div class="header-layouts">
+          <div class="navbar-layouts">
             <ul class="navbar-menu">
               <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link">ГЛАВНАЯ</a>
@@ -70,49 +64,55 @@
               <a href="#" class="navbar-authorization__get">ВОЙТИ</a>
             </div>
           </div>
-          <!-- header__menu -->
+          <!-- navbar-layouts -->
         </div>
       </div>
+      <div class="header__margin"></div>
+      <!-- "ЭЛЕМЕНТ ДЛЯ ОТСТУПА" -->
       <div class="logo">
-        <img src="img/logo.svg" alt="logo: barbershop" class="logo-desktop" />
+        <img src="img/logo.svg" alt="logo: barbershop" class="logo__desktop" />
         <img
           src="img/logotype-tablet.svg"
           alt="logo: barbershop"
-          class="logo-mobile"
+          class="logo__tablet"
         />
       </div>
     </header>
-    <section class="advantage">
-      <div class="advantage-blocks container">
-        <div class="banner">
-          <div class="banner-one">
-            <h2 class="banner-one__title">Стрижка у нас это выгодно!</h2>
-            <p class="banner-one__text">
-              Мужская стрижка требует точного подхода. Обратимся к статистике:
-            </p>
-            <p class="banner-one__commentary">* — приведённые данные ложь</p>
+    <section class="advantages">
+      <div class="advantages-blocks container">
+        <div class="advantages-blocks__left">
+          <h2 class="advantages-blocks__title">Стрижка у нас это выгодно!</h2>
+          <p class="advantages-blocks__text">
+            Мужская стрижка требует точного подхода. Обратимся к статистике:
+          </p>
+          <p class="advantages-blocks__commentary">
+            * — приведённые данные ложь
+          </p>
+        </div>
+        <div class="advantages-blocks__right">
+          <div class="advantages-blocks__price">
+            <h2 class="advantages-blocks__price-text">1500 *</h2>
+            <p class="advantages-blocks__price-subtext">рублей вложений</p>
           </div>
-          <div class="banner-two">
-            <div class="banner-two__price">
-              <h2 class="banner-two__price--figure">1500 *</h2>
-              <p class="banner-two__price--text">рублей вложений</p>
-            </div>
-            <div class="banner-two__time">
-              <h2 class="banner-two__time--figure">7 200</h2>
-              <p class="banner-two__time--text">секунд времени мастера</p>
-            </div>
-            <div class="banner-two__hair">
-              <h2 class="banner-two__hair--figure">90 000</h2>
-              <p class="banner-two__hair--fact">постриженных волос</p>
-            </div>
-            <div class="banner-two__like">
-              <div class="banner-two__like--figure">500 000 *</div>
-              <div class="banner-two__like--text">лайков и комплиментов</div>
+          <div class="advantages-blocks__time">
+            <h2 class="advantages-blocks__time-text">7 200</h2>
+            <p class="advantages-blocks__time-subtext">
+              секунд времени мастера
+            </p>
+          </div>
+          <div class="advantages-blocks__hair">
+            <h2 class="advantages-blocks__hair-text">90 000</h2>
+            <p class="advantages-blocks__hair-subtext">постриженных волос</p>
+          </div>
+          <div class="advantages-blocks__like">
+            <div class="advantages-blocks__like-text">500 000 *</div>
+            <div class="advantages-blocks__like-subtext">
+              лайков и комплиментов
             </div>
           </div>
         </div>
       </div>
-      <div class="vantage container"></div>
+      <div class="advantages__background"></div>
     </section>
   </body>
 </html>
