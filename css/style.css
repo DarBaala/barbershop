@@ -649,6 +649,10 @@ template {
   text-align: center;
 }
 
+.vantage--visible {
+  display: none;
+}
+
 .vantage-fast {
   margin-right: 60px;
   padding-right: 45px;
@@ -728,6 +732,10 @@ template {
   font-weight: normal;
   font-size: 20px;
   line-height: 27px;
+}
+
+.swiper--visible {
+  display: none;
 }
 
 .triangle {
@@ -1101,6 +1109,7 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: -7px;
   }
   .advantages-blocks__right {
     display: -webkit-box;
@@ -1250,6 +1259,106 @@ template {
     font-size: 18px;
     line-height: 18px;
     max-width: 110px;
+  }
+  .vantage {
+    max-width: 280px;
+    display: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .vantage--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .vantage-fast {
+    margin: 0 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .vantage-fast__icon {
+    margin: 0 0 0 0;
+  }
+  .vantage-fast__text {
+    text-align: center;
+  }
+  .vantage-steeply {
+    margin: 0 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .vantage-steeply__icon {
+    margin: 0 0 0 0;
+  }
+  .vantage-steeply__text {
+    text-align: center;
+  }
+  .vantage-dear {
+    margin: 0 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .vantage-dear__icon {
+    margin: 0 0 0 0;
+  }
+  .vantage-dear__text {
+    text-align: center;
+  }
+  .swiper {
+    max-width: 280px;
+  }
+  .swiper--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .swiper-slide {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .swiper-slide__text {
+    text-align: center;
+  }
+  .swiper-slide__icon {
+    margin-bottom: 27px;
+  }
+  .swiper-slide__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 13px;
+  }
+  .swiper-slide__sub-title {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 240px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-bottom: 45px;
   }
 }
 /*# sourceMappingURL=style.css.map */
