@@ -1,60 +1,17 @@
 .header
-  &__margin
-    margin-bottom: 58px
+  &__logo
+    display: flex
+    margin: auto
+    padding: 57px 0 436px
+  &__logo-tablet
+    display: none
+  &__logo-desktop
+    display: flex
+    margin: auto       
+  &__background
+    background-image: url(../img/back-desktop.png)
+    background-position: bottom
+    background-repeat: no-repeat
   &-mobile
     display: none
-.navbar
-  background-color: $black
-  &-layouts
-    display: flex
-    align-items: baseline
-  &-menu
-    display: flex
-    align-items: center
-    padding: 23px 0px 23px 31px
-    width: 90%
-    &__item
-      list-style-type: none
-      margin-right: 65px
-    &__link
-      color: $white
-      font-style: normal
-      font-weight: bold 
-      font-size: 18px
-      line-height: 24px
-      text-decoration: none
-      text-transform: uppercase
-      border-bottom: 1px solid transparent
-      padding-bottom: 24px
-      &:hover
-        transition: border-bottom 0.5s 
-        border-bottom: 1px solid #826550    
-
-  &-authorization
-    &__link
-      cursor: pointer
-    &__get
-      color: $white
-      font-style: normal
-      font-weight: bold 
-      font-size: 18px
-      line-height: 24px
-      text-decoration: none
-      text-transform: uppercase
-      border-bottom: 1px solid transparent
-      padding-bottom: 24px
-      &:hover
-        transition: border-bottom 0.5s 
-        border-bottom: 1px solid #826550
-        
-    &__icon
-      margin-right: 10px
-      margin-bottom: -1px  
-.logo
-  display: flex
-  margin: auto
-  &__tablet
-    display: none
-  &__desktop
-    display: flex
-    margin: auto        
+ 
