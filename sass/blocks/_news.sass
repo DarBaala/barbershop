@@ -1,0 +1,77 @@
+.news
+  background-color: #F8F5F2
+  &__layots
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 57px
+    margin-top: 53px  
+  &__title-name
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 30px
+    color: $black
+    margin-left: 70px
+    margin-bottom: 6px
+  &__button
+    padding: 13px 31px 13px 27px
+    border: 1px solid #E5DDD5
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 24px
+    &-visible
+      display: none
+  &__block
+    display: flex  
+  &__item
+    display: flex
+    margin-right: 47px
+    &:last-child
+      margin-right: 0
+  &__figure
+    position: relative 
+    width: 50px
+    height: 50px
+    background-color: #000000
+    border-radius: 0%
+    margin-right: 20px
+  &__triangle
+    position: absolute
+    width: 0
+    height: 0
+    border-left: 25px solid transparent
+    border-right: 25px solid transparent
+    border-bottom: 10px solid #000000
+    transform: rotate(180deg)
+    bottom: -10px
+    z-index: 1
+  &__date
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    z-index: 2
+  &__day
+    margin-top: 5px
+    font-style: normal
+    font-weight: bold
+    font-size: 30px
+    color: $white
+    line-height: 30px
+  &__month
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    color: $white
+    line-height: 30px
+    margin-top: -9px
+  &__text
+    font-family: PT Sans Narrow
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 27px
+    max-width: 204px
+    margin-top: -11px   

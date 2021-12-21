@@ -138,7 +138,20 @@
     &__left
       border-bottom: 51px solid #F8F5F2
     &__right
-      border-bottom: 51px solid #F8F5F2                              
+      border-bottom: 51px solid #F8F5F2 
+  .news
+    &__item
+      margin-right: 43px
+      &:last-child
+        display: none
+      &:nth-last-child(2)
+        margin-right: 0
+    &__layots
+      margin-top: 41px
+    &__title-name
+      margin-left: -2px
+    &__button
+      margin-right: 1px                                         
 
 
                   
@@ -400,3 +413,28 @@
       border-bottom: 66px solid #F8F5F2
     &__right          
       border-bottom: 66px solid #F8F5F2
+  .news
+    &__block
+      display: flex
+      flex-direction: column
+    &__item
+      margin-right: 0
+      margin-bottom: 44px
+      &:nth-last-child(2)
+        margin-bottom: 51px
+    &__button
+      display: none
+      &-visible
+        display: flex
+        margin: auto
+        padding: 13px 99px 13px 80px
+    &__title-name
+      margin: auto
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 30px
+    &__layots
+      display: flex
+      margin-top: 33px
+      margin-bottom: 39px
