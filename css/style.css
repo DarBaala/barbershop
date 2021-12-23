@@ -815,6 +815,7 @@ template {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
+  cursor: pointer;
 }
 
 .news__button-visible {
@@ -936,6 +937,7 @@ template {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
+  cursor: pointer;
 }
 
 .reviews__title-name {
