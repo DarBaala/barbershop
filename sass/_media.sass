@@ -151,7 +151,48 @@
     &__title-name
       margin-left: -2px
     &__button
-      margin-right: 1px                                         
+      margin-right: 1px
+  .reviews
+    padding-top: 33px   
+    &__title-name
+      margin-left: 0
+  .reviews-slide
+    &__block
+      display: flex
+      align-items: center
+      margin-bottom: 26px
+      border: 1px solid #E5DDD5
+      padding: 42px 0 32px 0     
+    &__image 
+      height: 80px
+      width: 80px
+      border-radius: 100px
+      margin-left: 79px
+      margin-top: 0
+    &__button
+      padding-top: 80px
+      transform: translateY(-44.4%)
+    &__text
+      border: none
+      padding: 0
+      margin-top: -42px
+      margin-left: 30px
+    &__title
+      margin-bottom: 14px
+    &__subtitle  
+      max-width: 400px
+    &__pagination
+      transform: translateY(-250%)
+  .swiper-pagination
+    &:after
+      position: absolute
+      content: ''
+      left: 256px
+      bottom: 0
+      padding: 12px 63px 2px 65px
+      background-color: #F8F5F2
+      z-index: -1
+
 
 
                   
@@ -376,7 +417,9 @@
       margin: 0 0 0 0
     &__dear-text
       text-align: center
-  
+  .swiper-pagination
+    &:after
+      display: none
   .swiper
     max-width: 280px
     margin-bottom: 0px
@@ -438,3 +481,43 @@
     &__layots
       display: flex
       margin-bottom: 39px
+  .reviews-slide__button
+    &--mobile
+      display: none
+  .reviews-swiper
+    margin: 0    
+  .reviews
+    padding-top: 25px
+    &__hr
+      margin-bottom: 27px
+    &__layots
+      display: flex
+    &__button
+      display: none
+    &__title-name
+      margin: auto
+      font-size: 30px
+      line-height: 30px     
+  .reviews-slide
+    &__title
+      margin-bottom: 6px
+    &__subtitle
+      max-width: 190px
+    &__block
+      display: flex
+      align-items: center
+      border: none
+      padding: 0
+    &__image
+      height: 50px
+      width: 50px
+      border-radius: 0
+      margin-right: 20px
+      margin-left: 0
+      margin-bottom: 102px
+    &__text
+      text-align: left
+      margin-left: 0
+      margin-bottom: 19px
+    &__pagination
+      transform: translateY(-200%)     
