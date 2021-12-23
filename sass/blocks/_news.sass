@@ -7,6 +7,7 @@
     align-items: center
     justify-content: space-between
     margin-bottom: 57px
+    padding-left: 70px
   &__title-name
     text-transform: uppercase
     font-style: normal
@@ -14,7 +15,6 @@
     font-size: 40px
     line-height: 30px
     color: $black
-    margin-left: 70px
     margin-bottom: 6px
   &__button
     text-transform: uppercase
@@ -28,12 +28,14 @@
     &-visible
       display: none
   &__block
-    display: flex  
+    display: flex
+    flex-wrap: wrap  
   &__item
     display: flex
     margin-right: 47px
     &:last-child
       margin-right: 0
+      order: 1
   &__figure
     position: relative 
     width: 50px

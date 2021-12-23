@@ -794,6 +794,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 57px;
+  padding-left: 70px;
 }
 
 .news__title-name {
@@ -803,7 +804,6 @@ template {
   font-size: 40px;
   line-height: 30px;
   color: #000000;
-  margin-left: 70px;
   margin-bottom: 6px;
 }
 
@@ -826,6 +826,8 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .news__item {
@@ -837,6 +839,9 @@ template {
 
 .news__item:last-child {
   margin-right: 0;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .news__figure {
@@ -907,7 +912,7 @@ template {
 }
 
 .reviews {
-  padding: 37px 0 50px;
+  padding: 37px 0 36px;
   background-color: #F8F5F2;
 }
 
@@ -928,6 +933,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-left: 70px;
 }
 
 .reviews__button {
@@ -945,7 +951,6 @@ template {
   font-weight: bold;
   font-size: 40px;
   line-height: 30px;
-  margin-left: 70px;
 }
 
 .reviews-swiper {
@@ -1037,6 +1042,112 @@ template {
 .swiper-pagination-bullet--rew span {
   background-color: #353535 !important;
   border: 1px solid #353535 !important;
+}
+
+.footer {
+  background-color: #292929;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 51px 12px 55px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 960px;
+}
+
+.footer__social {
+  margin-right: 150px;
+}
+
+.footer__be-friends {
+  margin-bottom: 13px;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.footer__icon-vk {
+  padding: 16px 17px 17px 18px;
+  border: 1px solid #4A4A4A;
+}
+
+.footer__icon-fb {
+  padding: 15px 20px 14px 20px;
+  border: 1px solid #4A4A4A;
+}
+
+.footer__icon-inst {
+  padding: 15px 15px 16px 16px;
+  border: 1px solid #4A4A4A;
+}
+
+.footer__author {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+.footer__button {
+  color: #FFFFFF;
+  padding: 14px 55px 13px 55px;
+  border: 1px solid #4A4A4A;
+  background-color: #292929;
+  margin-bottom: 12px;
+}
+
+.footer__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.footer__address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.footer__phone-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.footer__phone-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 @media (max-width: 1200px) {
@@ -1257,14 +1368,18 @@ template {
   .news__item:nth-last-child(2) {
     margin-right: 0;
   }
-  .news__title-name {
-    margin-left: -2px;
+  .news__layots {
+    padding-left: 0;
   }
   .news__button {
     margin-right: 1px;
   }
   .reviews {
     padding-top: 33px;
+    padding-bottom: 7px;
+  }
+  .reviews__layots {
+    padding-left: 0;
   }
   .reviews__title-name {
     margin-left: 0;
@@ -1317,6 +1432,46 @@ template {
     background-color: #F8F5F2;
     z-index: -1;
   }
+  .footer__block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-width: 640px;
+  }
+  .footer__button {
+    margin-bottom: 55px;
+  }
+  .footer__social {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-right: 0;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__be-friends {
+    display: none;
+  }
+  .footer__contacts {
+    margin-right: 15px;
+    margin-bottom: 45px;
+  }
+  .footer__icon-fb {
+    padding: 30px 19px 29px 26px;
+    width: 214px;
+    height: 101px;
+  }
+  .footer__icon-inst {
+    padding: 32px 15px 31px 22px;
+    width: 213px;
+    height: 101px;
+  }
+  .footer__icon-vk {
+    padding: 37px 17px 36px 24px;
+    width: 213px;
+    height: 101px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1345,7 +1500,6 @@ template {
     display: flex;
     margin: auto;
     padding: 26px 0px 21px;
-    cursor: pointer;
   }
   .header-mobile__image {
     min-width: 226px;
@@ -1407,6 +1561,9 @@ template {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
     padding: 0;
+  }
+  .advantages__triangle {
+    display: none;
   }
   .advantages__left {
     min-width: 0;
@@ -1815,6 +1972,55 @@ template {
   .reviews-slide__pagination {
     -webkit-transform: translateY(-200%);
             transform: translateY(-200%);
+  }
+  .footer {
+    padding-top: 32px;
+  }
+  .footer__block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 280px;
+    min-width: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__contacts {
+    text-align: center;
+    margin-right: 0;
+  }
+  .footer__title {
+    text-transform: none;
+  }
+  .footer__address {
+    margin-bottom: 17px;
+  }
+  .footer__phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 12px 70px 12px 75px;
+    border: 1px solid #4A4A4A;
+  }
+  .footer__phone-text {
+    display: none;
+  }
+  .footer__phone-link {
+    text-align: center;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .footer__social {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin-bottom: 28px;
+  }
+  .footer__button {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

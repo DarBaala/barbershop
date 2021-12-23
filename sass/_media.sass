@@ -148,12 +148,16 @@
       &:nth-last-child(2)
         margin-right: 0
     &__layots
+      padding-left: 0
     &__title-name
-      margin-left: -2px
+      
     &__button
       margin-right: 1px
   .reviews
-    padding-top: 33px   
+    padding-top: 33px
+    padding-bottom: 7px   
+    &__layots
+      padding-left: 0
     &__title-name
       margin-left: 0
   .reviews-slide
@@ -192,13 +196,39 @@
       padding: 12px 63px 2px 65px
       background-color: #F8F5F2
       z-index: -1
+  .footer
+    &__block
+      flex-wrap: wrap
+      min-width: 640px
+    &__button
+      margin-bottom: 55px  
+    &__social
+      order: 3
+      margin-right: 0
+      margin: auto
+      display: flex
+    &__be-friends
+      display: none  
+    &__contacts
+      margin-right: 15px     
+      margin-bottom: 45px
+    &__icon
+      &-fb
+        padding: 30px 19px 29px 26px
+        width: 214px
+        height: 101px
+      &-inst
+        padding: 32px 15px 31px 22px
+        width: 213px    
+        height: 101px
+      &-vk
+        padding: 37px 17px 36px 24px
+        width: 213px    
+        height: 101px  
 
-
-
-                  
 @media  ( max-width: 768px)
   .container
-    max-width: 280px
+    max-width: 280px 
   .navbar
     display: none     
   .header
@@ -212,7 +242,6 @@
         display: flex
         margin: auto
         padding: 26px 0px 21px
-        cursor: pointer
       &__image
         min-width: 226px  
       &__appointment
@@ -257,6 +286,8 @@
       min-width: 100%
       transform: translateY(0%)
       padding: 0
+    &__triangle
+      display: none  
     &__left
       min-width: 0
       min-height: 183px
@@ -520,4 +551,37 @@
       margin-left: 0
       margin-bottom: 19px
     &__pagination
-      transform: translateY(-200%)     
+      transform: translateY(-200%)
+  .footer
+    padding-top: 32px
+    &__block
+      flex-wrap: wrap
+      max-width: 280px
+      min-width: 0
+      justify-content: center
+    &__contacts
+      text-align: center
+      margin-right: 0
+    &__title
+      text-transform: none
+    &__address
+      margin-bottom: 17px
+    &__phone
+      display: flex
+      padding: 12px 70px 12px 75px
+      border: 1px solid #4A4A4A 
+    &__phone-text
+      display: none
+    &__phone-link
+      text-align: center
+      white-space: nowrap 
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 27px
+    &__social
+      order: 0
+      margin-bottom: 28px  
+    &__copywriter
+    &__button
+      margin-bottom: 0  
