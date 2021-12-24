@@ -314,7 +314,7 @@
         margin-bottom: -1px
         margin-right: 12px      
       &__burger
-        padding: 16px 0 0 0
+        
         right: 0
         top: 0
         position: absolute
@@ -328,21 +328,24 @@
         cursor: pointer
         transition: .3s
         &--active
-          padding-top: 23px
+          
           left: 0
       &__line
         &-one
-          margin-bottom: 7px  
+          position: absolute
+          top: 14px  
           width: 36px
           height: 2px
           background-color: #FFFFFF
         &-two
-          margin-bottom: 7px  
+          bottom: 25px
+          position: absolute
           width: 36px
           height: 2px
           background-color: #FFFFFF
         &-three
-          margin-bottom: 7px  
+          bottom: 16px
+          position: absolute  
           width: 36px
           height: 2px
           background-color: #FFFFFF
@@ -351,12 +354,12 @@
           display: none
         &-one--active
           content: ''
-          margin-bottom: -1px
+          top: 25px
           transform: rotate(45deg)
           transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
         &-three--active
           content: ''
-          margin-bottom: -1px
+          bottom: 22px
           transform: rotate(-45deg)
           transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 
                              
