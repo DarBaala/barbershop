@@ -236,22 +236,57 @@
     &__background
       display: none       
     &-mobile
+      z-index: 15
       display: flex
       flex-direction: column
-      background-color: #242424
+      &--fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+      &__layots
+        position: absolute
+        display: none
+        flex-direction: column
+        right: 0
+        top: 0   
+        &--active
+          display: flex  
+      &__menu
+        background-color: #826550
+      &__item
+        padding: 13px 0 13px 21px
+        box-shadow: 0px 1px 0px #71543F, inset 0px 1px 0px #886E5B
+        list-style: none
+        text-align: left
+        min-width: 250px      
       &__logo
+        min-width: 100%
+        background-color: #242424
         display: flex
         margin: auto
+        justify-content: center
         padding: 26px 0px 21px
       &__image
         min-width: 226px  
       &__appointment
         display: flex
         background-color: #826550
-        position: relative
+        position: relative   
       &__title
         padding-top: 9px
         padding-bottom: 13px
+      &__link-text
+        color: $white
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 24px
+        text-decoration: none
+        text-transform: uppercase  
+        &--active
+          color: #826550
+          background-color: #826550
       &__link
         color: $white
         font-style: normal
@@ -260,7 +295,26 @@
         line-height: 24px
         text-decoration: none
         text-transform: uppercase
+      &__get
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 24px
+        text-decoration: none
+        color: $white
+      &__authorization
+        display: flex
+        align-items: baseline
+        padding-left: 19px
+        padding-top: 18px
+        background-color: #6A4D38
+        min-height: 390px     
+      &__authorization-link
+      &__icon
+        margin-bottom: -1px
+        margin-right: 12px      
       &__burger
+        padding: 16px 0 0 0
         right: 0
         top: 0
         position: absolute
@@ -272,15 +326,21 @@
         border: none
         background-color: #6A4D38
         cursor: pointer
+        &--active
+          left: 0
+          right: none
       &__line
         margin-bottom: 7px  
         width: 36px
         height: 2px
         background-color: #FFFFFF
         &:first-child
-          margin-top: 16px 
+          
+
+             
 
   .advantages
+    padding-top: 133px
     &__blocks
       display: block
       flex-wrap: nowrap
@@ -598,3 +658,12 @@
     &__copywriter
     &__button
       margin-bottom: 0  
+@media  ( max-width: 340px)
+  .footer
+    &__icon
+      &-fb
+        padding: 45px 35px 43px 35px
+      &-inst
+        padding: 39px 35px 49px 35px
+      &-vk
+        padding: 40px 35px 47px 35px
