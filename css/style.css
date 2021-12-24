@@ -777,6 +777,32 @@ template {
   border-left: 50vw solid transparent;
 }
 
+.triangle__down {
+  max-width: 100%;
+  display: none;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+}
+
+.triangle__down-left {
+  width: 0;
+  height: 0;
+  border-bottom: 33px solid #292929;
+  border-right: 50vw solid transparent;
+}
+
+.triangle__down-right {
+  width: 0;
+  height: 0;
+  border-bottom: 33px solid #292929;
+  border-left: 50vw solid transparent;
+}
+
 .news {
   background-color: #F8F5F2;
   padding-top: 53px;
@@ -1062,18 +1088,25 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   min-width: 960px;
 }
 
+.footer__contacts {
+  margin-right: 92px;
+}
+
 .footer__social {
-  margin-right: 150px;
+  margin-right: 244px;
+}
+
+.footer__social-layots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer__be-friends {
-  margin-bottom: 13px;
+  margin-bottom: 12px;
   text-align: center;
   font-style: normal;
   font-weight: normal;
@@ -1083,17 +1116,26 @@ template {
 }
 
 .footer__icon-vk {
-  padding: 16px 17px 17px 18px;
+  background-image: url(../img/vk.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px 24px 25px 25px;
   border: 1px solid #4A4A4A;
 }
 
 .footer__icon-fb {
-  padding: 15px 20px 14px 20px;
+  background-image: url(../img/fb.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px 24px 25px 25px;
   border: 1px solid #4A4A4A;
 }
 
 .footer__icon-inst {
-  padding: 15px 15px 16px 16px;
+  background-image: url(../img/instagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px 24px 25px 25px;
   border: 1px solid #4A4A4A;
 }
 
@@ -1432,6 +1474,9 @@ template {
     background-color: #F8F5F2;
     z-index: -1;
   }
+  .footer {
+    padding-top: 51px;
+  }
   .footer__block {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1450,27 +1495,27 @@ template {
     display: -ms-flexbox;
     display: flex;
   }
+  .footer__social-layots {
+    margin-left: 8px;
+  }
   .footer__be-friends {
     display: none;
   }
   .footer__contacts {
-    margin-right: 15px;
+    margin-right: 170px;
     margin-bottom: 45px;
   }
   .footer__icon-fb {
-    padding: 30px 19px 29px 26px;
-    width: 214px;
-    height: 101px;
+    padding: 55px 106px 43px 106px;
+    background-image: url(../img/fb-mobile.svg);
   }
   .footer__icon-inst {
-    padding: 32px 15px 31px 22px;
-    width: 213px;
-    height: 101px;
+    padding: 39px 109px 59px 102px;
+    background-image: url(../img/inst-mobile.svg);
   }
   .footer__icon-vk {
-    padding: 37px 17px 36px 24px;
-    width: 213px;
-    height: 101px;
+    padding: 50px 108px 47px 102px;
+    background-image: url(../img/vk-mobile.svg);
   }
 }
 
@@ -1873,6 +1918,11 @@ template {
   .triangle__right {
     border-bottom: 66px solid #F8F5F2;
   }
+  .triangle__down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .news {
     padding-top: 33px;
   }
@@ -1923,6 +1973,7 @@ template {
   }
   .reviews {
     padding-top: 25px;
+    padding-bottom: 0;
   }
   .reviews__hr {
     margin-bottom: 27px;
@@ -1974,7 +2025,7 @@ template {
             transform: translateY(-200%);
   }
   .footer {
-    padding-top: 32px;
+    padding-top: 37px;
   }
   .footer__block {
     -ms-flex-wrap: wrap;
@@ -1988,18 +2039,20 @@ template {
   .footer__contacts {
     text-align: center;
     margin-right: 0;
+    margin-bottom: 29px;
   }
   .footer__title {
     text-transform: none;
+    margin-bottom: 13px;
   }
   .footer__address {
-    margin-bottom: 17px;
+    margin-bottom: 20px;
   }
   .footer__phone {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 12px 70px 12px 75px;
+    padding: 10px 70px 10px 75px;
     border: 1px solid #4A4A4A;
   }
   .footer__phone-text {
@@ -2018,6 +2071,15 @@ template {
         -ms-flex-order: 0;
             order: 0;
     margin-bottom: 28px;
+  }
+  .footer__icon-fb {
+    padding: 55px 55px 43px 55px;
+  }
+  .footer__icon-inst {
+    padding: 39px 55px 59px 55px;
+  }
+  .footer__icon-vk {
+    padding: 50px 55px 47px 55px;
   }
   .footer__button {
     margin-bottom: 0;

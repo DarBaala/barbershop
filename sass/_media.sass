@@ -197,6 +197,7 @@
       background-color: #F8F5F2
       z-index: -1
   .footer
+    padding-top: 51px
     &__block
       flex-wrap: wrap
       min-width: 640px
@@ -207,24 +208,24 @@
       margin-right: 0
       margin: auto
       display: flex
+    &__social-layots
+      margin-left: 8px
     &__be-friends
       display: none  
     &__contacts
-      margin-right: 15px     
+      margin-right: 170px    
       margin-bottom: 45px
     &__icon
       &-fb
-        padding: 30px 19px 29px 26px
-        width: 214px
-        height: 101px
+        padding: 55px 106px 43px 106px
+        background-image: url(../img/fb-mobile.svg)
       &-inst
-        padding: 32px 15px 31px 22px
-        width: 213px    
-        height: 101px
+        padding: 39px 109px 59px 102px
+        background-image: url(../img/inst-mobile.svg)
       &-vk
-        padding: 37px 17px 36px 24px
-        width: 213px    
-        height: 101px  
+        padding: 50px 108px 47px 102px
+        background-image: url(../img/vk-mobile.svg)
+      
 
 @media  ( max-width: 768px)
   .container
@@ -487,6 +488,8 @@
       border-bottom: 66px solid #F8F5F2
     &__right          
       border-bottom: 66px solid #F8F5F2
+    &__down
+      display: flex  
   .news
     padding-top: 33px
     &__block
@@ -519,6 +522,7 @@
     margin: 0    
   .reviews
     padding-top: 25px
+    padding-bottom: 0
     &__hr
       margin-bottom: 27px
     &__layots
@@ -553,7 +557,7 @@
     &__pagination
       transform: translateY(-200%)
   .footer
-    padding-top: 32px
+    padding-top: 37px
     &__block
       flex-wrap: wrap
       max-width: 280px
@@ -562,13 +566,15 @@
     &__contacts
       text-align: center
       margin-right: 0
+      margin-bottom: 29px
     &__title
       text-transform: none
+      margin-bottom: 13px
     &__address
-      margin-bottom: 17px
+      margin-bottom: 20px
     &__phone
       display: flex
-      padding: 12px 70px 12px 75px
+      padding: 10px 70px 10px 75px
       border: 1px solid #4A4A4A 
     &__phone-text
       display: none
@@ -581,7 +587,14 @@
       line-height: 27px
     &__social
       order: 0
-      margin-bottom: 28px  
+      margin-bottom: 28px
+    &__icon
+      &-fb
+        padding: 55px 55px 43px 55px
+      &-inst
+        padding: 39px 55px 59px 55px
+      &-vk
+        padding: 50px 55px 47px 55px
     &__copywriter
     &__button
       margin-bottom: 0  
