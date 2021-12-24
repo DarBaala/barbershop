@@ -1646,6 +1646,7 @@ template {
     margin-right: 12px;
   }
   .header-mobile__burger {
+    overflow: hidden;
     padding: 16px 0 0 0;
     right: 0;
     top: 0;
