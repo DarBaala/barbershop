@@ -26,4 +26,13 @@ headerMobile.addEventListener("click", function () {
   document
     .querySelector(".header-mobile__link-text")
     .classList.toggle("header-mobile__link-text--active");
+  document
+    .querySelector(".header-mobile__line-one")
+    .classList.toggle("header-mobile__line-one--active");
+  document
+    .querySelector(".header-mobile__line-two")
+    .classList.toggle("header-mobile__line-two--active");
+  document
+    .querySelector(".header-mobile__line-three")
+    .classList.toggle("header-mobile__line-three--active");
 });

@@ -1639,14 +1639,13 @@ template {
     padding-left: 19px;
     padding-top: 18px;
     background-color: #6A4D38;
-    min-height: 390px;
+    min-height: 60px;
   }
   .header-mobile__icon {
     margin-bottom: -1px;
     margin-right: 12px;
   }
   .header-mobile__burger {
-    overflow: hidden;
     padding: 16px 0 0 0;
     right: 0;
     top: 0;
@@ -1666,16 +1665,53 @@ template {
     border: none;
     background-color: #6A4D38;
     cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
   .header-mobile__burger--active {
+    padding-top: 23px;
     left: 0;
-    right: none;
   }
-  .header-mobile__line {
+  .header-mobile__line-one {
     margin-bottom: 7px;
     width: 36px;
     height: 2px;
     background-color: #FFFFFF;
+  }
+  .header-mobile__line-two {
+    margin-bottom: 7px;
+    width: 36px;
+    height: 2px;
+    background-color: #FFFFFF;
+  }
+  .header-mobile__line-three {
+    margin-bottom: 7px;
+    width: 36px;
+    height: 2px;
+    background-color: #FFFFFF;
+  }
+  .header-mobile__line-two--active {
+    display: none;
+  }
+  .header-mobile__line-one--active {
+    content: '';
+    margin-bottom: -1px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: bottom 300ms, -webkit-transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: bottom 300ms, -webkit-transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .header-mobile__line-three--active {
+    content: '';
+    margin-bottom: -1px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: bottom 300ms, -webkit-transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: bottom 300ms, -webkit-transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   .advantages {
     padding-top: 131px;
