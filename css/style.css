@@ -1692,10 +1692,10 @@ template {
     display: none;
   }
   .advantages__left {
+    margin-top: -1px;
     min-width: 0;
     min-height: 183px;
     padding: 26px 0px 27px 0px;
-    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
