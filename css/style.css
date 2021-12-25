@@ -1225,8 +1225,8 @@ template {
   z-index: 99;
   -webkit-animation-name: modal;
           animation-name: modal;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
 }
 
 .modal__close {
