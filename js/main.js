@@ -36,3 +36,23 @@ headerMobile.addEventListener("click", function () {
     .querySelector(".header-mobile__line-three")
     .classList.toggle("header-mobile__line-three--active");
 });
+
+let modaleGet = document.querySelector(".navbar__authorization");
+modaleGet.addEventListener("click", function () {
+  document.querySelector(".modal").classList.toggle("modal--active");
+});
+
+let closeModal = document.querySelector(".modal__close");
+closeModal.addEventListener("click", function () {
+  document.querySelector(".modal").classList.toggle("modal--active");
+});
+
+let modalMobile = document.querySelector(".header-mobile__authorization");
+modalMobile.addEventListener("click", function () {
+  document.querySelector(".modal").classList.toggle("modal--active");
+});
+
+let modalMobileClose = document.querySelector(".modal__close-mobile");
+modalMobileClose.addEventListener("click", function () {
+  document.querySelector(".modal").classList.toggle("modal--active");
+});

@@ -249,9 +249,9 @@
         display: none
         flex-direction: column
         right: 0
-        top: 0   
+        top: 0  
         &--active
-          display: flex  
+          display: flex        
       &__menu
         background-color: #826550
       &__item
@@ -313,8 +313,7 @@
       &__icon
         margin-bottom: -1px
         margin-right: 12px      
-      &__burger
-        
+      &__burger   
         right: 0
         top: 0
         position: absolute
@@ -326,9 +325,7 @@
         border: none
         background-color: #6A4D38
         cursor: pointer
-        transition: .3s
-        &--active
-          
+        &--active         
           left: 0
       &__line
         &-one
@@ -354,12 +351,12 @@
           display: none
         &-one--active
           content: ''
-          top: 25px
+          top: 24px
           transform: rotate(45deg)
           transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
         &-three--active
           content: ''
-          bottom: 22px
+          bottom: 24px
           transform: rotate(-45deg)
           transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 
                              
@@ -681,7 +678,65 @@
         padding: 50px 55px 47px 55px
     &__copywriter
     &__button
-      margin-bottom: 0  
+      margin-bottom: 0
+  .modal
+    &__container
+      min-width: 290px
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__block
+      padding: 37px 20px 37px 20px
+      width: 100%
+      top: 300px
+    &__button
+      display: none
+    &__mobile
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 100%
+    &__get
+      display: flex
+      padding: 19px 41px 18px 42px
+      border: none
+      color: $white
+      background-color: #826550
+      outline: none
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 24px  
+    &__close-mobile
+      display: flex
+      padding: 19px 33px 18px 33px
+      outline: none
+      border: 1px solid #E5DDD5
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 24px        
+    &__title
+      font-size: 30px
+      line-height: 30px  
+    &__login
+      height: 50px
+      padding: 18px 50px 19px 18px
+      font-size: 18px
+      line-height: 30px
+      &::placeholder
+        font-size: 18px
+        line-height: 30px
+    &__password
+      height: 50px
+      padding: 18px 50px 19px 18px
+      font-size: 18px
+      line-height: 30px
+      &::placeholder
+        font-size: 18px
+        line-height: 30px
+    &__close
+      display: none              
 @media  ( max-width: 340px)
   .footer
     &__icon
